@@ -1,0 +1,2 @@
+config SHIELD_TUBETEST
+    def_bool $(Shields_list_contains, TubeTest) 
