@@ -1,6 +1,6 @@
-if SHIELD_TUBETEST
+if SHIELD_murphpad
 
 config ZMK_KEYBOARD_NAME
-    Default "TubeTest"
+    Default "murphpad"
 
     endif
