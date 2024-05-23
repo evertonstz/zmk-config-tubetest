@@ -1,6 +1,0 @@
-if SHIELD_murphpad
-
-config ZMK_KEYBOARD_NAME
-    Default "murphpad"
-
-    endif
