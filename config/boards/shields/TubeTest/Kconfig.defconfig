@@ -1,6 +1,6 @@
 if SHIELD_TUBETEST
 
 config ZMK_KEYBOARD_NAME
-    Default "TubeTest"
+    default "TubeTest"
 
     endif
