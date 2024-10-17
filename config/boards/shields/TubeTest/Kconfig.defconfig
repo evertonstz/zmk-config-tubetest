@@ -3,4 +3,12 @@ if SHIELD_TUBETEST
 config ZMK_KEYBOARD_NAME
     default "TubeTest"
 
-    endif
+config ZMK_BLE_BOND
+    bool "Enable BLE bonding"
+    default n  # Disable if causing issues
+
+config ZMK_BLE_SLEEP
+    bool "Enable BLE sleep mode"
+    default n  # Disable if causing issues
+
+endif
