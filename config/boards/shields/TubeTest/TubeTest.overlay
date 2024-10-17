@@ -1,4 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <behaviors.dtsi>
 
 / {
     chosen {
@@ -31,6 +32,12 @@
                     <&gpio0      8 GPIO_ACTIVE_HIGH>,
                     <&gpio0      6 GPIO_ACTIVE_HIGH>,
                     <&gpio1      7 GPIO_ACTIVE_HIGH>;      
+    };
+
+    left_encoder: encoder_left {
+        compatible = "zmk,behavior-encoder";
+        a-gpios = <&gpio1 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio1 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
     };
 
     default_transform: matrix_transform {
