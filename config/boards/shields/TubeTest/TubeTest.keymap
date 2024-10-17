@@ -10,7 +10,7 @@
     {
         compatible = "zmk,keymap";
         // bindings = <&left_encoder &kp C_VOL_UP &kp C_VOL_DN>;
-        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+        
 
         default_layer 
         {
@@ -21,6 +21,8 @@
             &kp LSHIFT    &kp Z         &kp X    &kp C     &kp V     &kp B    &kp N   &kp M   &kp COMMA  &kp PERIOD  &kp SLASH      &kp RSHIFT  &kp UP     &kp MINUS
             &kp LCTRL     &kp LEFT_WIN  &kp LALT           &kp SPACE &kp RALT &kp A   &kp DEL &kp LEFT   &kp DOWN                   &kp RIGHT   &kp PG_DN  &kp PG_UP
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
