@@ -8,8 +8,8 @@
 
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
-        columns = <12>;
-        rows = <6>;
+        rows = <5>;
+        columns = <14>;
 // | SW0 | SW5 | SW10 | SW15 | SW20 | SW25                   | SW25 | SW20 | SW15 | SW10 | SW5 | SW1 |
 // | SW1 | SW6 | SW11 | SW16 | SW21 | SW26                   | SW26 | SW21 | SW16 | SW11 | SW6 | SW2 |
 // | SW2 | SW7 | SW12 | SW17 | SW22 | SW27                   | SW27 | SW22 | SW17 | SW12 | SW7 | SW3 |
