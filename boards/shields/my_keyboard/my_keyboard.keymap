@@ -14,5 +14,5 @@
             &kp LCTRL     &kp LEFT_WIN  &kp LALT           &kp SPACE &kp RALT &kp A   &kp DEL &kp LEFT   &kp DOWN                   &kp RIGHT   &kp PG_DN  &kp PG_UP
             >;
         };
-    };
+};
 };
