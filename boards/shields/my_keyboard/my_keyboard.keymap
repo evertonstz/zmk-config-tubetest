@@ -1,16 +1,17 @@
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
+ 
+/ {
+        keymap {
+                compatible = "zmk,keymap";
 
-keymap {
-    compatible = "zmk,keymap";
-
-    default_layer {
-        bindings = <
-            KP_ESC       KP_1     KP_2      KP_3      KP_4      KP_5      KP_6      KP_7      KP_8      KP_9      KP_0      KP_GRAVE   KP_EQUAL   KP_C_PP
-            KP_TAB       KP_Q      KP_W      KP_E      KP_R      KP_T      KP_Y      KP_U      KP_I      KP_O      KP_P      KP_LBKT    KP_RBKT    KP_BSPC
-            KP_CAPSLOCK  KP_A      KP_S      KP_D      KP_F      KP_G      KP_H      KP_J      KP_K      KP_L      KP_SEMICOLON KP_SQT    KP_ENTER    KP_BSLH
-            KP_LSHIFT    KP_Z      KP_X      KP_C      KP_V      KP_B      KP_N      KP_M      KP_COMMA   KP_PERIOD   KP_SLASH    KP_RSHIFT  KP_UP      KP_MINUS
-            KP_LCTRL     KP_LEFT_WIN KP_LALT   KP_NO      KP_SPACE   KP_RALT   KP_A      KP_DEL    KP_LEFT    KP_DOWN    KP_RIGHT    KP_PG_DN  KP_PG_UP
-        >;
-    };
+                default_layer {
+                        bindings = <
+                        &kp ESC       &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp GRAVE   &kp EQUAL   &kp C_PP
+                        &kp TAB       &kp Q       &kp W       &kp E       &kp R       &kp T       &kp Y       &kp U       &kp I       &kp O       &kp P       &kp LBKT    &kp RBKT    &kp BSPC
+                        &kp CAPSLOCK  &kp A       &kp S       &kp D       &kp F       &kp G       &kp H       &kp J       &kp K       &kp L       &kp SEMICOLON &kp SQT    &kp ENTER    &kp BSLH
+                        &kp LSHIFT    &kp Z       &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &kp COMMA   &kp PERIOD   &kp SLASH    &kp RSHIFT  &kp UP      &kp MINUS
+                        &kp LCTRL     &kp LEFT_WIN &kp LALT   &kp NO      &kp SPACE    &kp RALT    &kp A       &kp DEL     &kp LEFT    &kp DOWN     &kp RIGHT    &kp PG_DN  &kp PG_UP
+                        >;
+                };
+        };
 };
