@@ -19,6 +19,4 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: my_keyboard_left
-  - board: nice_nano_v2
-    shield: my_keyboard_right
+    shield: my_keyboard
