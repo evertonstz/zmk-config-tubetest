@@ -7,20 +7,11 @@
     };
 };
 
-/ {
-    // Keymap transform is not required for the dongle side
-};
-
-/ {
 bluetooth: bluetooth {
     compatible = "zmk,bluetooth";
     // Additional properties for Bluetooth configuration
 };
-};
 
-/ {
-    chosen {
-        // Configure BLE or other dongle-specific items here
-        zmk,ble = &bluetooth;
-    };
+chosen {
+    zmk,ble = &bluetooth; // Reference to the defined Bluetooth node
 };
