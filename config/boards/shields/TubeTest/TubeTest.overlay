@@ -1,5 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <zephyr/dt-bindings/input/input-event-codes.h>
+
 
 / {
     chosen {
@@ -54,9 +54,9 @@
         >;
     };
 
-    sensors: sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&left_encoder>;
-        triggers-per-rotation = <20>;
-    };
+    // sensors: sensors {
+    //     compatible = "zmk,keymap-sensors";
+    //     sensors = <&left_encoder>;
+    //     triggers-per-rotation = <20>;
+    // };
 };
