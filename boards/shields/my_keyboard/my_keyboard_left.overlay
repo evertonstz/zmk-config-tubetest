@@ -1,4 +1,5 @@
 / {
+/ {
     kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
@@ -14,4 +15,5 @@ bluetooth: bluetooth {
 
 chosen {
     zmk,ble = &bluetooth; // Reference to the defined Bluetooth node
+};
 };
