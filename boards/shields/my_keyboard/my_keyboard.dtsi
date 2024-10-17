@@ -1,14 +1,14 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
 / {
+    // Define the key scan matrix
     kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
         wakeup-source;
     };
-};
 
-/ {
+    // Define the transformation for the key matrix
     default_transform: keymap_transform0 {
         compatible = "zmk,matrix-transform";
         rows = <5>;
@@ -21,20 +21,18 @@
             RC(4,0) RC(4,1) RC(4,2)         RC(4,4) RC(4,5) RC(4,6) RC(4,7) RC(4,8) RC(4,9)          RC(4,11) RC(4,12) RC(4,13)
         >;
     };
-};
 
-/ {
+    // Define the physical layout
     default_layout: default_layout {
         compatible = "zmk,physical-layout";
         display-name = "Default Layout";
         transform = <&default_transform>;
         kscan = <&kscan0>;
     };
-};
 
-/ {
+    // Chosen node for ZMK to recognize the layout
     chosen {
-        zmk,physical-layout = &default_layout;
-        // Other chosen items
+        zmk,physical-layout = <&default_layout>;
+        // Other chosen items can be added here
     };
 };
