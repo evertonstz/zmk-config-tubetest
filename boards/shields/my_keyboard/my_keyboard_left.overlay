@@ -12,6 +12,13 @@
 };
 
 / {
+bluetooth: bluetooth {
+    compatible = "zmk,bluetooth";
+    // Additional properties for Bluetooth configuration
+};
+};
+
+/ {
     chosen {
         // Configure BLE or other dongle-specific items here
         zmk,ble = &bluetooth;
