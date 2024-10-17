@@ -3,20 +3,4 @@ if SHIELD_TUBETEST
 config ZMK_KEYBOARD_NAME
     default "TubeTest"
 
-config ZMK_BLE
-    bool "Enable Bluetooth Low Energy (BLE)"
-    default y
-
-config ZMK_BLE_BOND
-    bool "Enable BLE bonding"
-    default y  # Set to y if you need bonding
-
-config ZMK_BLE_SLEEP
-    bool "Enable BLE sleep mode"
-    default y  # Set to y for power saving
-
-config ZMK_IDLE_SLEEP_TIMEOUT
-    int "Idle sleep timeout"
-    default 30  # Ensure this is a valid integer
-
-endif
+    endif
