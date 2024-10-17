@@ -1,0 +1,19 @@
+/ {
+    kscan0: kscan0 {
+        compatible = "zmk,kscan-gpio-matrix";
+        diode-direction = "col2row";
+        wakeup-source;
+        // No rows or columns needed for the dongle
+    };
+};
+
+/ {
+    // Keymap transform is not required for the dongle side
+};
+
+/ {
+    chosen {
+        // Configure BLE or other dongle-specific items here
+        zmk,ble = &bluetooth;
+    };
+};
