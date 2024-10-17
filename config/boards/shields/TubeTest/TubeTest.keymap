@@ -9,7 +9,7 @@
     keymap 
     {
         compatible = "zmk,keymap";
-        bindings = <&left_encoder C_VOL_UP C_VOL_DN>;
+        bindings = <&left_encoder &kp VOL_UP &kp VOL_DOWN>;
 
         default_layer 
         {
